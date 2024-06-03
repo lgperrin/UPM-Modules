@@ -1,5 +1,7 @@
 # Trabajo de Fin de Grado: Problemática en la Construcción de _Data Pipelines_
 
+## Información General
+
 | **Universidad** | Universidad Politécnica de Madrid (UPM) |
 |----|---|
 | **Escuela** | ETS de Ingenieros Informáticos |
@@ -24,3 +26,17 @@ En este repositorio se proporciona el código que ejemplifica la problemática d
 _data pipelines_ en la actualidad. La construcción de los _pipelines_ de datos utiliza
 el lenguaje de programación Python principalmente, pero también requiere de ciertos 
 conocimientos en relación a Docker y lenguajes de consulta para bases de datos.
+
+## Conoce a la Autora
+
+Laura García Perrín comenzó su formación académica universitaria en la carrera de ingeniería biomédica, no obstante, dándose cuenta de que 
+la tendencia de toda la tecnología y de las organizaciones tenía por foco los datos y la sostenibilidad (entre otros) tomó la decisión de 
+formalizar sus estudios de grado en Ciencia de Datos e Inteligencia Artificial por la Universidad Politécnica de Madrid (UPM). 
+Entre sus intereses están los campos de _Big Data_, Inteligencia Artificial (AI) y desarrollo de _software_, que entiende pueden ser 
+aplicados a diversos sectores, así como ser mejorados a través de buenas prácticas. Le entusiasma aprender sobre nuevas tecnologías y le encanta 
+compartir sus conocimientos con la comunidad de desarrolladores a través de otras plataformas, como Medium.
+
+
+
+
+
