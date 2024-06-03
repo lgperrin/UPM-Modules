@@ -27,6 +27,12 @@ _data pipelines_ en la actualidad. La construcción de los _pipelines_ de datos 
 el lenguaje de programación Python principalmente, pero también requiere de ciertos 
 conocimientos en relación a Docker y lenguajes de consulta para bases de datos.
 
+## ¿Qué necesitas para entender este trabajo?
+
+Necesitarás instalar una distribución de Python en tu máquina local, que deberá tener al menos 4 GB de memoria, así como la versión 3.10 de Python, 
+que puedes instalar en tu sistema de forma global o utilizar un entorno virtual para probar los scripts con esta versión. También son necesarios
+los conocimientos en tecnología de contenedores, como Docker o Kubernetes, en lenguaje de serialización YAML y cierta visión global de lo que es el _Big Data_.
+
 ## Conoce a la Autora
 
 Laura García Perrín comenzó su formación académica universitaria en la carrera de ingeniería biomédica, no obstante, dándose cuenta de que 
