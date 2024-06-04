@@ -5,8 +5,7 @@
   >
     <img
       align="center"
-      alt="Mage"
-      src="[https://github.com/mage-ai/assets/blob/main/mascots/mascots-shorter.jpeg?raw=true](https://github.com/lgperrin/UPM-Modules/blob/main/TFG-lgperrin/imagenes/Captura%20de%20pantalla%202024-06-04%20182038.png)"
+      src="https://github.com/lgperrin/UPM-Modules/blob/main/TFG-lgperrin/imagenes/Captura%20de%20pantalla%202024-06-04%20182038.png"
       style="width:100%;"
     />
   </a>
