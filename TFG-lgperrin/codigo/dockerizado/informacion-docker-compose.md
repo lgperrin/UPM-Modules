@@ -39,8 +39,8 @@ se definen una serie de servicios que se "comunican" a través de una red (_netw
 
 Mage es una herramienta de _data pipeline_ de código abierto para transformar e integrar datos.
 
-1. [Instalación](#instalacion)
-1. [Features](#caracteristicas)
+1. [Instalación](#%EF%B8%8F-instalación)
+1. [Features](#-características)
 1. [Principios de Diseño](#principios-de-diseño)
 1. [Abstracciones Básicas](#abstracciones-basicas)
 
