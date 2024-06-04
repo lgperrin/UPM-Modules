@@ -1,7 +1,7 @@
 <h1 align="center">
       <img
             align="center"
-            src="https://github.com/lgperrin/UPM-Modules/blob/main/TFG-lgperrin/imagenes/Captura%20de%20pantalla%202024-06-04%20183527.png"
+            src="https://github.com/lgperrin/UPM-Modules/blob/main/TFG-lgperrin/imagenes/Captura_de_pantalla_2024-06-04_183527-removebg-preview.png"
             style="width:100%;"
       />
 </h1>
