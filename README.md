@@ -24,6 +24,12 @@ El repositorio está organizado por asignaturas y cada una de ellas contiene los
 
 A continuación, se listan las asignaturas incluidas en este repositorio junto con una breve descripción de cada una:
 
+| Asignatura | Identificador | Número de ECTS |
+| :--------: | :-----------: | :---------: |
+| Internet de las Cosas (IoT) | 105001036 | 3 ECTS |
+| Descubrimiento de Conocimiento en Datos Complejos | 105001038 | 3 ECTS |
+| TFG ETSIINF | - | 12 ECTS |
+
 ## 💻 Tecnologías Utilizadas
 
 En los diferentes proyectos, he utilizado una variedad de lenguajes y herramientas, incluyendo pero no limitado a:
