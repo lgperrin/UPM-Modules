@@ -1,8 +1,4 @@
 <h1 align="center">
-  <a
-    target="_blank"
-    href="https://mage.ai"
-  >
     <img
       align="center"
       src="https://github.com/lgperrin/UPM-Modules/blob/main/TFG-lgperrin/imagenes/Captura%20de%20pantalla%202024-06-04%20182038.png"
