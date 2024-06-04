@@ -1,6 +1,6 @@
-# Trabajo de Fin de Grado: Problemática en la Construcción de _Data Pipelines_
+# 👩‍🎓 Trabajo de Fin de Grado: Problemática en la Construcción de _Data Pipelines_
 
-## Información General
+## ℹ️ Información General
 
 | **Universidad** | Universidad Politécnica de Madrid (UPM) |
 |----|---|
@@ -8,7 +8,7 @@
 | **Grado** | Ciencia de Datos e Inteligencia Artificial |
 | **Autora** | Laura García Perrín |
 
-## Resumen
+## 📓 Resumen
 
 La Ciencia de Datos (en adelante, _Data Science_) es una disciplina científica en
 la que el actor principal son los datos (modelo _data-centric_). La diversidad y
@@ -20,20 +20,23 @@ Science_ asociada con las diferentes etapas del desarrollo de _data pipelines_ e
 base a una arquitectura de microservicios. Más concretamente, se pretende eva-
 luar tanto la necesidad como la posibilidad de orquestación de dichos servicios.
 
-## ¿Qué encontrarás en este repositorio?
+## 📚 ¿Qué encontrarás en este repositorio?
 
 En este repositorio se proporciona el código que ejemplifica la problemática de construir 
 _data pipelines_ en la actualidad. La construcción de los _pipelines_ de datos utiliza
 el lenguaje de programación Python principalmente, pero también requiere de ciertos 
 conocimientos en relación a Docker y lenguajes de consulta para bases de datos.
 
-## ¿Qué necesitas para entender este trabajo?
+## 🧠 ¿Qué necesitas para entender este trabajo?
 
 Necesitarás instalar una distribución de Python en tu máquina local, que deberá tener al menos 4 GB de memoria, así como la versión 3.10 de Python, 
 que puedes instalar en tu sistema de forma global o utilizar un entorno virtual para probar los scripts con esta versión. También son necesarios
-los conocimientos en tecnología de contenedores, como Docker o Kubernetes, en lenguaje de serialización YAML y cierta visión global de lo que es el _Big Data_.
+los conocimientos en tecnología de contenedores, como Docker o Kubernetes, en lenguaje de serialización YAML y cierta visión global de lo que es <a
+    href="https://docs.mage.ai"
+    target="_blank"
+  ><b>Mage AI</b></a>.
 
-## Conoce a la Autora
+## 👋 Conoce a la Autora
 
 Laura García Perrín comenzó su formación académica universitaria en la carrera de ingeniería biomédica, no obstante, dándose cuenta de que 
 la tendencia de toda la tecnología y de las organizaciones tenía por foco los datos y la sostenibilidad (entre otros) tomó la decisión de 
