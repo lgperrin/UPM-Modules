@@ -1,3 +1,8 @@
+<img
+      src="(https://github.com/lgperrin/UPM-Modules/blob/main/TFG-lgperrin/imagenes/Captura%20de%20pantalla%202024-06-04%20183527.png"
+      style="width:100%;"
+/>
+
 # 🗣️ Información General sobre el Dataset
 
 Los datos provienen de Stats NZ Tatauranga Aotearoa, que es la agencia de datos oficial de Nueva Zelanda. Ellos se encargan de recopilar información de personas y 
