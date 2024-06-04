@@ -1,10 +1,11 @@
 <h1 align="center">
-<a
+      <a
       <img
-            src="(https://github.com/lgperrin/UPM-Modules/blob/main/TFG-lgperrin/imagenes/Captura%20de%20pantalla%202024-06-04%20183527.png"
+            align="center"
+            src="https://github.com/lgperrin/UPM-Modules/blob/main/TFG-lgperrin/imagenes/Captura%20de%20pantalla%202024-06-04%20183527.png"
             style="width:100%;"
       />
-</a>
+      </a>
 </h1>
 
 # 🗣️ Información General sobre el Dataset
