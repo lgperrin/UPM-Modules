@@ -1,3 +1,17 @@
+<h1 align="center">
+  <a
+    target="_blank"
+    href="https://mage.ai"
+  >
+    <img
+      align="center"
+      alt="Mage"
+      src="[https://github.com/mage-ai/assets/blob/main/mascots/mascots-shorter.jpeg?raw=true](https://github.com/lgperrin/UPM-Modules/blob/main/TFG-lgperrin/imagenes/Captura%20de%20pantalla%202024-06-04%20182038.png)"
+      style="width:100%;"
+    />
+  </a>
+</h1>
+
 # 👩‍🎓 Trabajo de Fin de Grado: Problemática en la Construcción de _Data Pipelines_
 
 ## ℹ️ Información General
