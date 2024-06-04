@@ -4,7 +4,7 @@ Los datos provienen de Stats NZ Tatauranga Aotearoa, que es la agencia de datos 
 organizaciones a través de censos y encuestas. Usan esta información para publicar ideas y datos sobre Nueva Zelanda y ayudar a otros usuarios a usar los datos. 
 Concretamente, el _dataset_ puede ser descargado a través del siguiente link:
 
-* Fuente: [Stats NZ](https://www.stats.govt.nz/assets/Uploads/Electronic-card-transactions/Electronic-card-transactions-October-2023/Download-data/electronic-card-transactions-october-2023.zip)
+* Fuente: [Stats NZ Tatauranga Aotearoa](https://www.stats.govt.nz/assets/Uploads/Electronic-card-transactions/Electronic-card-transactions-October-2023/Download-data/electronic-card-transactions-october-2023.zip)
 
 El fichero CSV contiene una serie de transacciones con tarjeta electrónica (ECT) que cubre transacciones con tarjetas de débito, crédito y cargo con comerciantes con 
 sede en Nueva Zelanda durante el mes de octubre de 2023. La serie se puede utilizar para indicar cambios en el gasto de los consumidores y la actividad económica. Algunos 
