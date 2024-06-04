@@ -39,10 +39,10 @@ se definen una serie de servicios que se "comunican" a través de una red (_netw
 
 Mage es una herramienta de _data pipeline_ de código abierto para transformar e integrar datos.
 
-1. [Instalaciíon](#%EF%B8%8F-instalacion)
-1. [Features](#-caracteristicas)
-1. [Principios de Diseño](https://docs.mage.ai/design/principios-de-diseño)
-1. [Abstracciones Básicas](https://docs.mage.ai/design/abstracciones-basicas)
+1. [Instalación](###-instalacion)
+1. [Features](###-caracteristicas)
+1. [Principios de Diseño](###-principios-de-diseño)
+1. [Abstracciones Básicas](###-abstracciones-basicas)
 
 ### 🏃‍♂️ Instalación
 
