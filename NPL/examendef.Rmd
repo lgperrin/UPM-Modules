@@ -1,0 +1,340 @@
+---
+title: "Laura García Perrín"
+output: html_notebook
+---
+### EJERCICIO 1
+
+```{r}
+library(quanteda)
+url <- "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&p=20110927&tn=0"
+lines <- readLines(url, encoding="UTF-8")
+```
+```{r}
+linesdef <- lines[599:2114]
+```
+
+```{r}
+grep('<p class="parrafo">?', linesdef)
+```
+```{r}
+limpiarTexto <- function(vector){
+  res <- gsub("<p class=.*?>", "", vector)
+  res1 <- gsub("</.*?>", "", res)
+  res2 <- gsub("<.*? class=.*?>", "", res1)
+  res3 <- res2[-which(res2=="")]
+  res4 <- res3[1:length(res3)-1]
+  res4
+}
+```
+
+```{r}
+constitucion <- limpiarTexto(linesdef)
+```
+
+```{r}
+articulos <- grep("Art.* \\d{1,}", constitucion)
+cadena <- vector()
+
+for (i in 2:length(articulos)){
+  inicio <- articulos[i-1]
+  final <- articulos[i]-1
+  cadena[i-1] <- paste(constitucion[inicio:final], collapse=" ")
+}
+n <- length(articulos)
+articulo169 <- paste(constitucion[articulos[n]:length(constitucion)], collapse=" ")
+cadena[n] <- articulo169
+```
+
+```{r}
+cadena[length(cadena)] # para leer el artículo 169
+```
+El vector de caracteres "cadena" es el que posee los artículos por cada posición del vector. En el anterior párrafo se muestra el último artículo de la Constitución española. A continuación, vamos a ver cuál es el artículo con más párrafos. Para ello podemos observar la variable definida anteriormente "articulos" que posee los índices donde comienza cada artículo. 
+
+```{r}
+articulos
+```
+```{r}
+maximo <- vector()
+for (i in 2:length(articulos)){
+  distancia <-  articulos[i] - articulos[i-1]
+  maximo[i] <- distancia
+}
+```
+
+```{r}
+which.max(maximo)
+```
+Por lo tanto (y según se ha construido el anterior bucle), el artículo con más párrafos parece ser el artículo 149. Vamos a calcular a continuación el número de párrafos.
+ 
+```{r}
+articulo149 <- unlist(strsplit(cadena[149], split="\\d"))
+vacios <- which(articulo149=="")
+parrafosOK <- articulo149[-vacios]
+```
+
+```{r}
+length(parrafosOK)-2  # en uno de los párrafos pone "artículo 27" y eso hace sumar dos párrafos más de los que en realidad son
+```
+### EJERCICIO 2
+```{r}
+library(udpipe)
+library(spacyr)
+spacy_initialize(model="es_core_news_sm")
+```
+```{r}
+udmodel_es <- udpipe_load_model("spanish-ancora-ud-2.5-191206.udpipe")
+corpusConstitucion <- readRDS("const_es.rds")
+```
+
+Para el primer apartado, voy a crear una función que realice el análisis morfosintáctico artículo por artículo, guardando dicho análisis en una posición de una lista.
+
+```{r}
+analisisArticulos <- function(corpus){
+  lista <- list()
+  for (i in 1:length(names(corpus))){
+    frases <- unlist(spacy_tokenize(corpus[i], what="sentence"))
+    analisis <- as.data.frame(udpipe_annotate(udmodel_es, frases))
+    lista[[i]] <- analisis
+  }
+  lista
+}
+```
+
+```{r}
+analisisArticulos <- analisisArticulos(corpusConstitucion)
+```
+Vamos a comprobar el análisis de un artículo al azar, por ejemplo, el artículo 120.
+
+```{r}
+analisisArticulos[[120]]
+```
+
+Para el segundo apartado, voy a crear una función que realice el análisis morfosintáctico del corpus y que, como resultado, nos retorne una tabla en la que nos aparezcan los adjetivos más usados de toda la Constitución, así como su frecuencia en la misma.
+
+
+```{r}
+sacarAdjetivos <- function(corpus){
+  frases <- unlist(spacy_tokenize(corpus, what="sentence"))
+  analisis <- as.data.frame(udpipe_annotate(udmodel_es,frases))
+  adjetivos <- analisis$token[analisis$upos=="ADJ"]
+  sort(table(adjetivos), decreasing=TRUE)[1:10]
+}
+```
+
+```{r}
+sacarAdjetivos(corpusConstitucion)
+```
+### EJERCICIO 3
+
+```{r}
+corpusConstitucion <- readRDS("const_es.rds")
+docvars(corpusConstitucion)$numTit
+```
+
+```{r}
+titulos <- corpus_group(corpusConstitucion, groups=docvars(corpusConstitucion)$numTit)
+```
+
+```{r}
+toks <- tokens(titulos,
+               remove_punct=TRUE,
+               remove_symbols=TRUE,
+               remove_numbers=TRUE)
+```
+
+```{r}
+matdfm <- dfm(toks)
+distancias <- dist(matdfm, method="euclidean")
+grupos <- hclust(distancias, method="ward.D")
+```
+
+```{r}
+plot(grupos, 
+     xlab="Títulos de la constitución", 
+     ylab="",
+     cex=1,
+     hang= -1,
+     main="Dos clusters")
+rect.hclust(grupos, k=2)
+```
+```{r}
+plot(grupos, 
+     xlab="Títulos de la constitución", 
+     ylab="",
+     cex=1,
+     hang= -1,
+     main="Cuatro clusters")
+rect.hclust(grupos, k=4)
+```
+Vamos a comprobar si tiene algún efecto utilizar la matriz TF-IDF que, como recordamos, es la normalización de la mtriz TF.
+
+```{r}
+matTFIDF <- dfm_tfidf(matdfm)
+distancias2 <- dist(matTFIDF, method="euclidean")
+grupos2 <- hclust(distancias2, method="ward.D")
+```
+
+```{r}
+plot(grupos2, 
+     xlab="Títulos de la constitución", 
+     ylab="",
+     cex=1,
+     hang= -1,
+     main="Dos clusters con matriz TF-IDF")
+rect.hclust(grupos, k=2)
+```
+```{r}
+plot(grupos2, 
+     xlab="Títulos de la constitución", 
+     ylab="",
+     cex=1,
+     hang= -1,
+     main="Cuatro clusters con matriz TF-IDF")
+rect.hclust(grupos, k=4)
+```
+Observamos que sí existen diferencias: con la matriz TF nos salen que hay títulos que son más parecidos entre sí (1,3 y 8 respecto de los demás títulos), y que son distintos respecto de los que nos aparecen con la matriz TF-IDF (títulos 0, 4 y 10 respecto de los demás títulos).
+
+### EJERCICIO 4
+
+La estrategia que se va a seguir es la siguiente: se va a definir una función que calcule la accuracy de los modelos, otras dos funciones que calculen la matriz de confusión y la predicción del test, y, finalmente, una última función que dada una muestra INT nos devuelva una lista con los valores pedidos.
+
+```{r}
+library(caret)
+library(quanteda.textmodels)
+```
+```{r}
+corpusLMRD <- readRDS("data_corpus_LMRD.rds")
+```
+
+```{r}
+accuracy <- function(prediccion, test){
+  mi_acc_coinciden <- sum(as.character(prediccion) == as.character(docvars(test)$polarity))
+  mi_acc_totales <- length(as.character(prediccion))
+  mi_acc <- mi_acc_coinciden/mi_acc_totales
+  mi_acc
+}
+```
+
+```{r}
+modeloNB <- function(train, test){
+  modelo <- textmodel_nb(train, train$polarity, distribution="Bernoulli")
+  prediccion <- predict(modelo, newdata=test)
+  confM <- confusionMatrix(prediccion, docvars(test)$polarity)
+  res <- list(confM, prediccion)
+  res
+}
+```
+
+```{r}
+modeloSVM <- function(train, test){
+  ntrain <- dfm_sample(train, 1000) # svm no sporta muchas muestras en mi ordenador
+  modelo <- textmodel_svm(ntrain, ntrain$polarity, weight="uniform")
+  prediccion <- predict(modelo, newdata=test)
+  confM <- confusionMatrix(prediccion, docvars(test)$polarity)
+  res <- list(confM, prediccion)
+  res
+}
+```
+
+```{r}
+sacarValores <- function(n){
+  set.seed(123)
+  matriz <- dfm(tokens(corpusLMRD))
+  train <- dfm_subset(matriz, set=="train")
+  test <- dfm_sample(dfm_subset(matriz, set=="test"), n)
+  
+  resultados <- list(Bernoulli=list(acc=0.0, p=0.0, r=0.0),
+                     SVM=list(acc=0.0, p=0.0, r=0.0))
+  
+  NB <- modeloNB(train, test)   # aquí van la confM y la prediccion
+  SVM <- modeloSVM(train,test)
+  
+  
+  resultados$Bernoulli$acc <- accuracy(NB[[2]], test)
+  resultados$SVM$acc <- accuracy(SVM[[2]], test)
+  
+  resultados$Bernoulli$p <- NB[[1]]$byClass["Pos Pred Value"]
+  resultados$Bernoulli$r <- NB[[1]]$byClass["Sensitivity"]
+  
+  resultados$SVM$p <- SVM[[1]]$byClass["Pos Pred Value"]
+  resultados$SVM$r <- SVM[[1]]$byClass["Sensitivity"]
+  resultados
+}
+```
+
+```{r}
+sacarValores(2000)
+```
+
+Ahora vamos a por las gráficas...
+
+
+```{r}
+res <- list()
+#De 2000 en 2000 hasta que se pueda...
+idx <- 1:4
+valoresX <- 1000 *idx #De 1.000 a 4.000 de 1.000 en 1.000
+for (i in idx){
+  res[[i]] <- sacarValores(valoresX[i])
+}
+```
+
+```{r}
+valoresY <- sapply(res, function(x){x$Bernoulli$acc})
+```
+
+```{r}
+rangoEjeY <- c(valoresY, sapply(res, function(x){x$SVM$acc}))
+plot (main= "accuracy (rojo Bernoulli, y azul SVM)",
+      xlab="Número de documentos",
+      ylab="Accuracy [0, 1]",
+      x= valoresX,
+      y=valoresY,
+      type="l", #l = líneas
+      ylim=c(0, 1), #min(rangoEjeY), max(rangoEjeY)
+      col="red")
+lines(x= valoresX,
+      y=sapply(res, function(x){x$SVM$acc}),
+      col="blue")
+```
+```{r}
+rangoEjeY <- c(valoresY, sapply(res, function(x){x$SVM$p}))
+plot (main= "precision (rojo Bernoulli, y azul SVM)",
+      xlab="Número de documentos",
+      ylab="Precision [0, 1]",
+      x=valoresX,
+      y=valoresY,
+      type="l", #l = líneas
+      ylim=c(min(rangoEjeY),
+             max(rangoEjeY)),
+      col="red") #Acc en rojo
+
+lines(x= valoresX,
+      y=sapply(res, function(x){x$SVM$p}),
+      col="blue")
+```
+
+```{r}
+valoresY <- sapply(res, function(x){x$Bernoulli$r})
+
+rangoEjeY <- c(valoresY, sapply(res, function(x){x$SVM$r}))
+plot (main= "recall (rojo Bernoulli, y azul SVM)",
+      xlab="Número de documentos",
+      ylab="recall [0, 1]",
+      x= valoresX,
+      y=valoresY,
+      type="l", #l = líneas
+      ylim=c(min(rangoEjeY),
+             max(rangoEjeY)),
+      col="red") #Acc en rojo
+
+lines(x= valoresX,
+      y=sapply(res, function(x){x$SVM$r}),
+      col="blue")
+```
+
+```{r}
+spacy_finalize()
+```
+
+
