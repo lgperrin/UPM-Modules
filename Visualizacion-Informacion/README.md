@@ -1,0 +1,35 @@
+# 📈 Visualización de Datos con Shiny
+
+Este repositorio contiene una aplicación Shiny desarrollada en R para la visualización de datos utilizando el conjunto de datos `mtcars`. La aplicación permite generar gráficos de dispersión e histogramas de las variables seleccionadas.
+
+## ✏️ Asignatura
+
+- **Nombre:** Visualización de la Información
+- **Código:** 105000442
+- **Plan de Estudios:** Grado en Ingeniería Informática
+- **Curso Académico:** 2020/21
+- **Semestre:** Segundo semestre
+- **Centro:** Escuela Técnica Superior de Ingenieros Informáticos, UPM
+
+## 👩 Autora
+
+- **Nombre:** Laura García Perrín
+- **Fecha:** 13/05/2023
+
+## 📘 Descripción del Proyecto
+
+La aplicación Shiny permite a los usuarios visualizar gráficos de dispersión e histogramas basados en el conjunto de datos `mtcars`. 
+Los usuarios pueden seleccionar las variables que desean visualizar y personalizar los gráficos según sus necesidades.
+
+## 💻 Instalación
+
+Para ejecutar esta aplicación, es necesario tener R y las siguientes bibliotecas instaladas:
+
+- shiny
+- ggplot2
+- shinythemes
+
+Puedes instalar estas bibliotecas utilizando el siguiente código en R:
+
+```r
+install.packages(c("shiny", "ggplot2", "shinythemes"))
