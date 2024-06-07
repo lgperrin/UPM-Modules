@@ -1,4 +1,6 @@
-![alt text](https://github.com/lgperrin/UPM-Modules/blob/main/Computacion-Social/Captura%20de%20pantalla%202024-06-07%20125356.png)
+<p align="center">
+  <img src="https://github.com/lgperrin/UPM-Modules/blob/main/Computacion-Social/Captura%20de%20pantalla%202024-06-07%20125356.png" width="350">
+</p>
 
 # 🔥 Modelo de Incendio Forestal
 
