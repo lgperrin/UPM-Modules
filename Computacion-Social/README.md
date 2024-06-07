@@ -18,7 +18,7 @@ El modelo simula un incendio forestal con varios agentes y parámetros que afect
 - **Viento**: Agente que altera la propagación del fuego en el bosque.
 
 <p align="center">
-  <img src="https://github.com/lgperrin/UPM-Modules/blob/main/Computacion-Social/Captura%20de%20pantalla%202024-06-07%20125356.png" width="400">
+  <img src="https://github.com/lgperrin/UPM-Modules/blob/main/Computacion-Social/Captura%20de%20pantalla%202024-06-07%20125356.png" width="500">
 </p>
 
 ## 👾 Implementación
