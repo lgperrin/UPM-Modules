@@ -1,3 +1,5 @@
+![alt text](https://github.com/lgperrin/UPM-Modules/blob/main/Computacion-Social/Captura%20de%20pantalla%202024-06-07%20125356.png)
+
 # 🔥 Modelo de Incendio Forestal
 
 Este repositorio contiene un proyecto desarrollado en NetLogo que simula la propagación de un incendio forestal. El modelo permite observar la influencia del viento, la actuación de bomberos y helicópteros de rescate, así como la supervivencia de animales y la preservación de zonas del bosque.
