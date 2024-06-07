@@ -1,26 +1,26 @@
-# Práctica de _Edge Computing_
+# 🛜 Práctica de _Edge Computing_
 
-## Objetivos
+## 🎯 Objetivos
 
 Los objetivos que se persiguen son:
 
 * Implementar un sistema que adquiera y procese muestras de voz, partiendo de la señal proporcionada por el micrófono SPM1423 y presente en el módulo M5 Stick C Plus.
 * Desarrollar y transferir al procesador ESP32 una red neuronal convolucional que sirva para reconocer diferentes comandos de control hablados.
 
-## Flujo de Trabajo
+## 👩‍🏭 Flujo de Trabajo
 
 1. Seleccionar y grabar comandos de voz
 2. Implementar CNN
 3. Implementar sistema completo en M5 Stick C Plus
 
 
-## Material necesario
+## ✏️ Material necesario
 
 - [x] Visual Studio
 - [x] Arduino IDE
 - [x] Dispositivo M5 Stick C Plus
 
-## Comandos de voz elegidos
+## 🗣️ Comandos de voz elegidos
 
 | Comando de Voz | Descripción                                |
 |----------------|--------------------------------------------|
@@ -29,7 +29,7 @@ Los objetivos que se persiguen son:
 | Stop         | Detiene una acción o comando en curso  |
 
 
-## Funciones implementadas
+## 👾 Funciones implementadas
 
 | Nombre del Método  | Descripción |
 |--------------------|-------------|
@@ -41,5 +41,5 @@ Los objetivos que se persiguen son:
 | `representative_dataset_gen` | Genera un conjunto de datos representativo necesario para la conversión del modelo a Tensor-Flow Lite. |
 | `convert_to_tflite` | Convierte el modelo entrenado a un formato TensorFlow Lite con optimizaciones y cuantificación. |
 
-Finalmente, el modelo obtiene un accuracy del 93% aproximadamente en el conjunto de entrenamiento, lo que quiere decir que es mejorable ya que probablemente
-exista sobreajuste (overfitting). Ello podría deberse a consideraciones de diseño o bien al número de muestras de voz con las que se trabaja para entrenar la red neuronal.
+Finalmente, el modelo obtiene un _accuracy_ del 93% aproximadamente en el conjunto de entrenamiento, lo que quiere decir que es mejorable ya que probablemente
+exista sobreajuste (_overfitting_). Ello podría deberse a consideraciones de diseño o bien al número de muestras de voz con las que se trabaja para entrenar la red neuronal.
