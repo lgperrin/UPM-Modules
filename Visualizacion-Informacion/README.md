@@ -25,8 +25,6 @@ Los usuarios pueden seleccionar las variables que desean visualizar y personaliz
   <img src="https://github.com/lgperrin/UPM-Modules/blob/main/Visualizacion-Informacion/Captura%20de%20pantalla%202024-06-07%20130322.png" width="500">
 </p>
 
-![alt text]()
-
 ## 💻 Instalación
 
 Para ejecutar esta aplicación, es necesario tener R y las siguientes bibliotecas instaladas:
