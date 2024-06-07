@@ -21,6 +21,8 @@ Este repositorio contiene una aplicación Shiny desarrollada en R para la visual
 La aplicación Shiny permite a los usuarios visualizar gráficos de dispersión e histogramas basados en el conjunto de datos `mtcars`. 
 Los usuarios pueden seleccionar las variables que desean visualizar y personalizar los gráficos según sus necesidades.
 
+![alt text](https://github.com/lgperrin/UPM-Modules/blob/main/Visualizacion-Informacion/Captura%20de%20pantalla%202024-06-07%20130322.png)
+
 ## 💻 Instalación
 
 Para ejecutar esta aplicación, es necesario tener R y las siguientes bibliotecas instaladas:
