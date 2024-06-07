@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://github.com/lgperrin/UPM-Modules/blob/main/Computacion-Social/Captura%20de%20pantalla%202024-06-07%20125356.png" width="350">
-</p>
-
 # 🔥 Modelo de Incendio Forestal
 
 Este repositorio contiene un proyecto desarrollado en NetLogo que simula la propagación de un incendio forestal. El modelo permite observar la influencia del viento, la actuación de bomberos y helicópteros de rescate, así como la supervivencia de animales y la preservación de zonas del bosque.
@@ -20,6 +16,10 @@ El modelo simula un incendio forestal con varios agentes y parámetros que afect
 - **Animales**: Representados por `turtles` que huyen del fuego o mueren si se encuentran en el mismo `patch` que el fuego.
 - **Bomberos y Helicópteros**: Agentes que se mueven hacia el fuego para apagarlo, cada uno con diferentes capacidades de acción.
 - **Viento**: Agente que altera la propagación del fuego en el bosque.
+
+<p align="center">
+  <img src="https://github.com/lgperrin/UPM-Modules/blob/main/Computacion-Social/Captura%20de%20pantalla%202024-06-07%20125356.png" width="400">
+</p>
 
 ## 👾 Implementación
 
