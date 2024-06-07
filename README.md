@@ -30,6 +30,7 @@ A continuación, se listan las asignaturas incluidas en este repositorio junto c
 | Descubrimiento de Conocimiento en Datos Complejos | 105001038 | 3 ECTS |
 | Computación Social | 615001023 | 3 ECTS |
 | Procesamiento del Lenguaje Natural (NPL) | 615001014 | 3 ECTS |
+| Visualización de la Información | 105000442 | 3 ECTS |
 | TFG ETSIINF | - | 12 ECTS |
 
 ## 💻 Tecnologías Utilizadas
