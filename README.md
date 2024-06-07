@@ -28,6 +28,7 @@ A continuación, se listan las asignaturas incluidas en este repositorio junto c
 | :-------- | :-----------: | :---------: |
 | Internet de las Cosas (IoT) | 105001036 | 3 ECTS |
 | Descubrimiento de Conocimiento en Datos Complejos | 105001038 | 3 ECTS |
+| Computación Social | 615001023 | 3 ECTS |
 | TFG ETSIINF | - | 12 ECTS |
 
 ## 💻 Tecnologías Utilizadas
