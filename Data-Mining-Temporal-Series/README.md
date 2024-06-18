@@ -1,5 +1,4 @@
-# Data Mining en Series Temporales
-🇪🇸
+# 📈 Data Mining en Series Temporales
 
 | Universidad | Politécnica de Madrid (UPM) |
 | --- | --- |
@@ -9,7 +8,7 @@
 | Autoras | Laura García Perrín y  Xiya Sun | 
 
 
-## Introducción y Objetivos
+## 🎯 Introducción y Objetivos
 Este repositorio contiene un proyecto final que implementa y analiza técnicas de _Data Mining_ en Series Temporales.
 El **objetivo principal** es llevar a cabo un análisis temporal de tendencias climáticas para apreciar cómo cambian las 
 temperaturas, la humedad, la velocidad del viento y otros parámetros a lo largo del tiempo para un cierto _dataset_. 
@@ -27,7 +26,7 @@ Otros propósitos que se pueden derivar de este análisis u objetivo principal s
 * **Identificar patrones en la temperatura global**: El análisis temporal se puede utilizar para identificar patrones en
   la temperatura global, por ejemplo.
 
-## Conjunto de Datos
+## 📊 Conjunto de Datos
 
 El conjunto de datos con el que se trabaja se obtiene de Kaggle a través del siguiente enlace:
 
@@ -55,7 +54,7 @@ y de 12 variables o columnas, tal y como se muestran en la siguiente tabla:
 _Nota_. A destacar que aquellas las series temporales que recopilan información atmosférica presentan la peculiaridad de ser estacionarias, 
 motivo por el cual se espera que en aplicaciones de predicción o _forecasting_ los resultados obtenidos sean bastante buenos y precisos.
 
-## Metodología
+## ✏️ Metodología
 
 Se van a utilizar distintos enfoques de _Data Mining_ en el conjunto de datos descrito con anterioridad, de tal forma que se 
 satisfagan los objetivos planteados para el proyecto de la asignatura. Previamente, será necesario llevar a cabo un tratamiento
@@ -69,7 +68,7 @@ tabla:
 | Random Forest Regressor | Lanzamiento de predicciones             | Método de aprendizaje en conjunto para regresión que utiliza múltiples árboles de decisión.|
 | CNNs                  | Clasificación de series temporales        | Redes neuronales convolucionales para el análisis y clasificación de series temporales. |
 
-## Método de Evaluación
+## 🧪 Método de Evaluación
 
 Una vez implementadas las distintas técnicas de _Data Mining_, se procederá a evaluarlas en función de ciertas métricas. De esta forma se 
 pretende alcanzar una forma tangible de poder medir su alcance y de analizar las limitaciones de cada enfoque. Para cada técnica de _Data Mining_
@@ -82,7 +81,7 @@ se implementa un método Python.
 | `eval_model`          | Random Forest Regressor  | MAE, MSE, RMSE, MAPE, R-squared                                                    | Gráfica de dispersión  | Compara los valores verdaderos con las predicciones y proporciona métricas de regresión.                 |
 | `eval_cnn`            | CNNs                     | Matriz de confusión, Informe de clasificación (precision, recall, F1-score, etc.) | No especificado        | Sugerido para evaluar la clasificación de series temporales mediante CNNs.                               |
 
-## Apéndice: Tiempo de Ejecución (segundos) para cada Método Implementado
+## ⏱️ Apéndice: Tiempo de Ejecución (segundos) para cada Método Implementado
 
 | Método                             | Tiempo de Ejecución (segundos) |
 |------------------------------------|:------------------------------:|
