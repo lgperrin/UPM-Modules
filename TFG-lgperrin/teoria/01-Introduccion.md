@@ -2,7 +2,7 @@
 
 ## Data pipelines de aprendizaje automático
 
-Hola a todos, bienvenidos al módulo sobre pipelines de aprendizaje automático. En este módulo, vamos a tomar un cuaderno de Jupyter que hicimos anteriormente, lleno de código y experimentos, y lo vamos a convertir en algo que podamos ejecutar fácilmente, algo reproducible y manejable.
+Hola a todos, bienvenidos al módulo sobre pipelines de aprendizaje automático. En este módulo, partimos de la base de usar un cuaderno de Jupyter o script de Python que hayamos creado con el objetivo de entrenar cierto modelo de red neuronal (por ejemplo, en la carpeta de "código" de este mismo repositorio, tienes dos ejemplos), lleno de código y experimentos, y la idea es entender que todo esto se puede convertir en algo que podamos ejecutar fácilmente, algo reproducible y manejable.
 
 ## ¿Qué es un pipeline de aprendizaje automático?
 
