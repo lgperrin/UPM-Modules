@@ -1,14 +1,16 @@
-# Orquestación y Machine Learning en los Data Pipelines
+# Introducción al TFG
 
-## Data pipelines de aprendizaje automático
+## Evolución del Enfoque Data-centric (1960 – Actualidad)
 
-Hola a todos, bienvenidos al módulo sobre pipelines de aprendizaje automático. En este módulo, partimos de la base de usar un cuaderno de Jupyter o script de Python que hayamos creado con el objetivo de entrenar cierto modelo de red neuronal (por ejemplo, en la carpeta de "código" de este mismo repositorio, tienes dos ejemplos), lleno de código y experimentos, y la idea es entender que todo esto se puede convertir en algo que podamos ejecutar fácilmente, algo reproducible y manejable.
+La gestión de datos ha pasado de centrarse en almacenamiento y procesamiento a un enfoque _data-centric_, considerando los datos como un activo esencial. Esto ha impulsado soluciones de Big Data y la proliferación de _data pipelines_ para la gestión de datos a gran escala. La gestión de datos es estratégica para la toma de decisiones. La construcción de data pipelines eficientes y escalables es esencial para mantener operaciones en un entorno complejo y exigente.
 
-## ¿Qué es un pipeline de aprendizaje automático?
+Ahora bien, con el auge del Big Data, las organizaciones deben gestionar enormes volúmenes de datos, enfrentando desafíos en procesamiento, calidad, integridad y seguridad de los datos. La necesidad es desarrollar y mantener _data pipelines_ efectivos y eficientes.
 
-Un pipeline de aprendizaje automático es simplemente una serie de pasos que seguimos para entrenar un modelo. Piensa en ello como una receta de cocina: tienes que seguir varios pasos en orden para obtener el resultado final.
+## ¿Qué son los data pipelines?
 
-## Pasos del pipeline
+Son conjuntos de tareas que transforman datos de entrada antes de llegar a un destino. Representados como grafos acíclicos dirigidos (DAG), muestran dependencias entre tareas, cruciales para transformar datos en información procesable.
+
+Por ejemplo, un pipeline de aprendizaje automático es simplemente una serie de pasos que seguimos para entrenar un modelo. Piensa en ello como una receta de cocina: tienes que seguir varios pasos en orden para obtener el resultado final. 
 
 1. **Descargar los datos**: Este es el primer paso, donde obtenemos los datos que necesitamos. Es como conseguir todos los ingredientes para nuestra receta.
 
@@ -22,7 +24,7 @@ Un pipeline de aprendizaje automático es simplemente una serie de pasos que seg
 
 ## Desafíos y Soluciones
 
-Un cuaderno de Jupyter puede volverse muy desordenado y difícil de manejar, especialmente si necesitas ejecutar todo en orden cada vez. Es muy largo, y si necesitamos volver a ejecutarlo, tendríamos que abrirlo en nuestra máquina local y ejecutar las celdas en orden. También, hay muchas cosas que no sabemos qué hacen, especialmente si no somos quienes creamos este cuaderno. Para resolver esto, podemos convertir nuestro cuaderno en un script de Python. Sin embargo, esto también tiene sus limitaciones, como la programación de tareas y la colaboración en equipo.
+Un cuaderno de Jupyter puede volverse muy desordenado y difícil de manejar, especialmente si necesitas ejecutar todo en orden cada vez. Es muy largo, y si necesitamos volver a ejecutarlo, tendríamos que abrirlo en nuestra máquina local y ejecutar las celdas en orden. También, hay muchas cosas que no sabemos qué hacen, especialmente si no somos quienes creamos este cuaderno. Para resolver esto, podemos convertir nuestro cuaderno en un script de Python. Sin embargo, esto también tiene sus limitaciones, como la programación de tareas y la colaboración en equipo. Así pues, cambia el paradigma de hacerlo todo en local a querer utilizar otras soluciones más colaborativas, escalables y fiables.
 
 ## Orquestación de flujos de trabajo
 
