@@ -1,39 +1,32 @@
 # Orquestación y Machine Learning en los Data Pipelines
 
-Hola a tod@s, bienvenidos al módulo sobre pipelines de aprendizaje automático. 
-Aquí usaremos un cuaderno de Jupyter con el código necesario en Python para reproducir el siguiente experimento o escenario: orquestación de datos.
-Para empezar, cuando hablamos de entrenar un pipeline, generalmente nos referimos a una secuencia de pasos que ejecutamos para entrenar un modelo.
+## _Data pipelines_ de aprendizaje automático
 
-## ¿Qué es MLOps?
-Operacionalizar modelos de ML implica moverlos del desarrollo a la producción para impulsar el valor empresarial. Para ello, se puede seguir una serie
-de pasos:
+Hola a todos, bienvenidos al módulo sobre pipelines de aprendizaje automático. En este módulo, vamos a tomar un cuaderno de Jupyter que hicimos anteriormente, lleno de código y experimentos, y lo vamos a convertir en algo que podamos ejecutar fácilmente, algo reproducible y manejable.
 
-1. Preparar el modelo para el despliegue implica optimizar el rendimiento, asegurarse de que maneje datos del mundo real y empaquetarlo para su integración en los sistemas existentes.
+## ¿Qué es un pipeline de aprendizaje automático?
 
-2. Desplegar el modelo implica moverlo del desarrollo a la producción, haciéndolo accesible para usuarios y aplicaciones.
+Un pipeline de aprendizaje automático es simplemente una serie de pasos que seguimos para entrenar un modelo. Piensa en ello como una receta de cocina: tienes que seguir varios pasos en orden para obtener el resultado final.
 
-3. Una vez desplegados, los modelos deben ser monitoreados continuamente para verificar su precisión y confiabilidad, y pueden necesitar reentrenamiento con nuevos datos y actualizaciones para mantener su efectividad.
+## Pasos del pipeline
 
-4. El modelo operacionalizado debe integrarse en los flujos de trabajo, aplicaciones y procesos de toma de decisiones existentes para impulsar el impacto empresarial.
+1. **Descargar los datos**: Este es el primer paso, donde obtenemos los datos que necesitamos. Es como conseguir todos los ingredientes para nuestra receta.
 
-La operacionalización efectiva permite a las organizaciones ir más allá de la experimentación y obtener un valor tangible del ML a escala, impulsando aplicaciones inteligentes que personalizan la experiencia del cliente y crean valor empresarial real.
+2. **Transformar los datos**: Aquí, preparamos los datos para que sean útiles. Esto puede incluir limpiar los datos, convertir formatos o eliminar información irrelevante, como preparar y cortar los ingredientes antes de cocinarlos.
 
-## ¿Por qué necesitamos operacionalizar el ML?
+3. **Preparar los datos para el aprendizaje automático**: En este paso, hacemos que los datos estén listos para ser usados por el modelo. Esto puede incluir crear nuevas características a partir de los datos existentes, similar a mezclar y combinar ingredientes para crear una masa.
 
-* **Productividad**. MLOps fomenta la colaboración entre científicos de datos, ingenieros de ML y equipos de DevOps al proporcionar un entorno unificado para el seguimiento de experimentos, ingeniería de características, gestión de modelos y despliegue. Esto rompe los silos y acelera todo el ciclo de vida del aprendizaje automático.
+4. **Ajuste de hiperparámetros**: Aquí, buscamos los mejores parámetros para nuestro modelo, como ajustar la temperatura y el tiempo de cocción en nuestra receta para obtener el mejor resultado.
 
-* **Confiabilidad**. MLOps asegura modelos de alta calidad y confiables en producción a través de conjuntos de datos limpios, pruebas adecuadas, validación, prácticas de CI/CD, monitoreo y gobernanza.
+5. **Entrenar el modelo**: Usamos los parámetros que encontramos en el paso anterior para entrenar el modelo, es decir, hacemos que aprenda de los datos. Es como poner la mezcla en el horno y dejar que se cocine.
 
-* **Reproducibilidad**. MLOps permite la reproducibilidad y el cumplimiento normativo al versionar conjuntos de datos, código y modelos, proporcionando transparencia y capacidad de auditoría para asegurar la adherencia a políticas y regulaciones.
+## Desafíos y Soluciones
 
-* **Tiempo para obtener valor**. MLOps agiliza el ciclo de vida del ML, permitiendo a las organizaciones desplegar con éxito más proyectos en producción y derivar valor comercial tangible y ROI de las inversiones en AI/ML a escala.
+Un cuaderno de Jupyter puede volverse muy desordenado y difícil de manejar, especialmente si necesitas ejecutar todo en orden cada vez. Es muy largo, y si necesitamos volver a ejecutarlo, tendríamos que abrirlo en nuestra máquina local y ejecutar las celdas en orden. También, hay muchas cosas que no sabemos qué hacen, especialmente si no somos quienes creamos este cuaderno. Para resolver esto, podemos convertir nuestro cuaderno en un script de Python. Sin embargo, esto también tiene sus limitaciones, como la programación de tareas y la colaboración en equipo.
 
-## ¿Cómo mejorar o "ayudar" a MLOps?
+## Orquestación de flujos de trabajo
 
-Lo ideal sería tener a mano una serie de herramientas, soluciones, protocolos y buenas prácticas como las siguientes, entre otros:
+Para manejar estos desafíos, usamos herramientas de orquestación de flujos de trabajo como Airflow, Prefect o Mage. Estas herramientas nos ayudan a organizar y ejecutar nuestros pasos de manera ordenada y eficiente. Funcionan como un chef profesional que coordina todo en la cocina para asegurarse de que cada paso se complete correctamente y a tiempo. Usar estas herramientas nos permite mantener nuestros procesos organizados, manejables y escalables, lo que es crucial a medida que nuestros proyectos crecen y se vuelven más complejos. En este módulo, aprenderemos cómo implementar estos pipelines de aprendizaje automático nosotr@s mism@s.
 
-- [x] Tener entornos de despliegue que se asemejen en la medida de lo posible a entornos "reales".
-- [x] CI/CD
-- [x] Herramientas para el desarrollo de modelos DBT, de _machine learning_, PySpark, etc.
 
-Todo ello permite a l@s desarrolladores centrarse en la creación de modelos mientras mejora la eficiencia y la colaboración.
+
