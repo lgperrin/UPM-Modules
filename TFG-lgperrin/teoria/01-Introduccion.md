@@ -26,6 +26,6 @@ Un cuaderno de Jupyter puede volverse muy desordenado y difícil de manejar, esp
 
 ## Orquestación de flujos de trabajo
 
-Para manejar estos desafíos, usamos herramientas de orquestación de flujos de trabajo como Airflow, Prefect o Mage. Estas herramientas nos ayudan a organizar y ejecutar nuestros pasos de manera ordenada y eficiente. Funcionan como un chef profesional que coordina todo en la cocina para asegurarse de que cada paso se complete correctamente y a tiempo. Usar estas herramientas nos permite mantener nuestros procesos organizados, manejables y escalables, lo que es crucial a medida que nuestros proyectos crecen y se vuelven más complejos. En este módulo, aprenderemos cómo implementar estos pipelines de aprendizaje automático nosotr@s mism@s.
+Para manejar estos desafíos, usamos herramientas de orquestación de flujos de trabajo como Airflow, Prefect o Mage. Estas herramientas nos ayudan a organizar y ejecutar nuestros pasos de manera ordenada y eficiente. Funcionan como un chef profesional que coordina todo en la cocina para asegurarse de que cada paso se complete correctamente y a tiempo. Usar estas herramientas nos permite mantener nuestros procesos organizados, manejables y escalables, lo que es crucial a medida que nuestros proyectos crecen y se vuelven más complejos. 
 
 
