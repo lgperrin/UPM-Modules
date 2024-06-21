@@ -1,6 +1,6 @@
 # Orquestación y Machine Learning en los Data Pipelines
 
-## _Data pipelines_ de aprendizaje automático
+## Data pipelines de aprendizaje automático
 
 Hola a todos, bienvenidos al módulo sobre pipelines de aprendizaje automático. En este módulo, vamos a tomar un cuaderno de Jupyter que hicimos anteriormente, lleno de código y experimentos, y lo vamos a convertir en algo que podamos ejecutar fácilmente, algo reproducible y manejable.
 
