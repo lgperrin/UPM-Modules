@@ -47,7 +47,7 @@ if __name__ == "__main__":
     start_pipeline = time.time()
 
     # Extraer (E)
-    url = 'https://raw.githubusercontent.com/lgperrin/TFG-lgperrin/main/datasets/electronic-card-transactions-october-2023-csv-tables.csv'
+    url = 'https://github.com/lgperrin/UPM-Modules/blob/main/TFG-lgperrin/dataset/electronic-card-transactions-october-2023-csv-tables.csv'
     data = extract(url)
 
     # Transformar (T)
