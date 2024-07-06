@@ -1,0 +1,1 @@
+{"Series_reference": "str", "Period": "float64", "Data_value": "float64", "Suppressed": "str", "STATUS": "str", "UNITS": "str", "Magnitude": "int64", "Subject": "str", "Group": "str", "Series_title_1": "str", "Series_title_2": "str", "Series_title_3": "str", "Series_title_4": "float64", "Series_title_5": "float64"}
